@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #555;
+}
+
+.center-body {
+  max-width: 100%;
+  width: 1400px;
+  margin: 0 auto;
+}
+.main {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dflex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.dflex div a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dflex div a:hover {
+  color: #08820d;
+}
+
+.dflex div a.active {
+  color: #08820d;
+}
+
+.auth-box {
+  width: 150px;
+  padding: 0 10px;
+  background-color: #08820d;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.auth-box a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.auth-box a:hover {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  font-size: 24px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 160px;
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #08820d;
+  border-bottom: 2px solid black;
+}
+
+.title h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+.card {
+  width: 30%;
+  height: 850px;
+  margin: 100px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-form {
+  padding: 20px 0;
+}
+.main-form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.main-form button {
+  width: 90%;
+  height: 50px;
+  background-color: #08820d;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+}
+.account p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.account a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
