@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -13,29 +15,58 @@
     <header>
         <div class="center-body">
             <nav>
-                <div><img class="logo" src="/images/logo.png" alt=""></div>
-                <div class="dflex">
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="about.html" class="active">About Us</a></div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services</button>
-                        <div class="dropdown-content">
-                            <a href="cruise.html">Cruise</a>
-                            <a href="flight.html">Flight</a>
-                            <a href="visa.html">Visa</a>
+                <!-- <img class="nav-menu" src="/icons/menu.svg" alt=""> -->
+                <div> <a href="index.html"><img class="logo" src="/images/logo.png" alt=""></a></div>
+
+                <div id="web">
+                    <div class="dflex" id="navLinks">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="about.html" class="active">About Us</a></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="cruise.html">Cruise</a>
+                                <a href="flight.html">Flight</a>
+                                <a href="visa.html">Visa</a>
+                            </div>
+                        </div>
+                        <div><a href="Blog">Blog</a></div>
+                        <div><a href="contact.html">Contact Us</a></div>
+                        <div class="auth-box"><a href="login.html">Login</a></div>
+                    </div>
+                </div>
+
+                <div class="icon-menu">
+                    <i class="fas fa-bars" onclick="showMenu()" style="color: black;"></i>
+                </div>
+            </nav>
+
+            <!-- mobile and tablet -->
+            <nav id="mobile">
+                <div class="mobile">
+                    <div class="mobile-flex">
+                        <div class="close" onclick="hideMenu()"> <i class="fas fa-times" style="color: black;"></i>
+                        </div>
+
+                        <div class="mobile__flex-menu">
+                            <div class="menu"><a href="index.html">Home</a></div>
+                            <div class="menu"><a href="about.html" class="active">About Us</a></div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="cruise.html">Cruise</a>
+                                    <a href="flight.html">Flight</a>
+                                    <a href="visa.html">Visa</a>
+                                </div>
+                            </div>
+                            <div class="menu"><a href="blog.html">Blog</a></div>
+                            <div class="menu"><a href="contact.html">Contact Us</a></div>
+                            <div class="auth-box nenu"><a href="login.html">Login</a></div>
                         </div>
                     </div>
-                    <div><a href="#">Blog</a></div>
-                    <div><a href="contact.html">Contact Us</a></div>
                 </div>
-
-
-
-                <div class="auth-box">
-                    <a href="login.html">Login</a>
-                </div>
-
             </nav>
+        </div>
         </div>
 
         <div class="hero">
@@ -50,8 +81,10 @@
 
     <!-- End of Appbar header section -->
     <main>
+
         <section class="center-body">
             <div class="about">
+
                 <div class="about-box">
                     <h2>Experience Luxury Travel</h2>
                     <p>Start your journey with us and explore the world's most breathtaking destinations. Lorem ipsum
@@ -64,43 +97,117 @@
                 </div>
                 <img src="/images/about_1.jpg" alt="">
             </div>
-
-
-
-            <div class="serve">
-                <div class="serves">
-                    <img src="/icons/beach.svg" alt="">
-                    <h2>Top Destination</h2>
-                </div>
-                <div>
-                    <img src="/icons/luggage.svg" alt="">
-                    <h2>Amazing Services</h2>
-                </div>
-
-                <div>
-                    <img src="/icons/money.svg" alt="">
-                    <h2>Best Prices</h2>
-                </div>
-            </div>
         </section>
-        <section class="testimonial">
-            <div class="center-body">
-                <div class="testimonial-list">
-                    <p>SIMPLY AMAZING PLACES</p>
-                    <h2>TESTIMONIALS</h2>
-                    <div class="txt">
-                        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ratione praesentium
-                                voluptate, illo laboriosam nihil quis nesciunt labore ad esse aliquam beatae voluptates
-                                doloremque tempore magnam error explicabo magni natus.
-
-                            </em></p>
-                        <p>- John Doe</p>
+        <section class="center-body">
+            <div class="icons">
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/direction-both-svgrepo-com.svg" alt="">
                     </div>
+
+                    <h1>Guided Tours</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/cruise.svg" alt="">
+                    </div>
+                    <h1>Cruise Package</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/worldwide.svg" alt="">
+                    </div>
+                    <h1>Worldwide coverage</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/air.svg" alt="">
+                    </div>
+                    <h1>Fast Booking</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
                 </div>
             </div>
-            </div>
+
         </section>
 
+
+
+
+        <div class="slideshow-container">
+            <h2>WHAT PEOPLE ARE SAYING...
+            </h2>
+            <div class="mySlides">
+                <div class="mySlides-center">
+                    <img src="/images/chris.jpg" alt="">
+                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                    <p class="author">- John Keats</p>
+
+                </div>
+
+            </div>
+
+            <div class="mySlides">
+                <div class="mySlides-center">
+                    <img src="/images/alex.jpg" alt="">
+                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="mySlides-center">
+                    <img src="/images/chris.jpg" alt="">
+                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- Newsletter -->
+        <div class="newsletter">
+
+            <div class="news-row">
+                <div>
+                    <h2 style="margin-bottom: 10px;">Want to get the latest travel news and deals?
+                    </h2>
+
+                    <p>Enter your email and we'll send them your way.</p>
+                </div>
+
+                <div class="roww">
+                    <form action="get" method="post" class="form-row">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Your name...">
+
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Your email...">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- Newsletter end -->
 
     </main>
 
@@ -132,11 +239,15 @@
 
                 </div>
 
-                <div class="services footer-col">
+
+                <div class="links footer-col">
                     <h3>Other Links</h3>
-                    <p>About Us</p>
-                    <p>Blog</p>
-                    <p>Contact Us</p>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact U</a></li>
+                    </ul>
+
                 </div>
 
                 <div class="contacts footer-col">
@@ -154,23 +265,6 @@
                     </div>
                 </div>
 
-
-
-                <!-- <div class="subscribe">
-                        <h3>Subscribe to our Newsletter</h3>
-    
-                        <form action="get">
-                            <label for="email"></label>
-                            <input type="text" name="email" id="email">
-                            <button>Subscribe</button>
-                        </form>
-                        <div class="footer-about">
-                            <br>
-                            <p>Subscribe to receive marketing updates from Next Dream Luxury Travels and agree to our
-                                Privacy Policy
-                            </p>
-                        </div>
-                    </div> -->
             </div>
 
             <div class="hr"></div>
@@ -181,7 +275,59 @@
         </div>
     </footer>
     <!-- End of footer section -->
+    <script>
+        let navLinks = document.getElementById("navLinks")
 
+        function showMenu() {
+            mobile.style.display = "block";
+        }
+
+        function hideMenu() {
+            mobile.style.display = "none";
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Automatically change slides every 3 seconds
+        let slideInterval = setInterval(function () {
+            plusSlides(1);
+        }, 3000);
+
+        function plusSlides(n) {
+            clearInterval(slideInterval); // Clear interval to prevent multiple intervals
+            showSlides(slideIndex += n);
+            slideInterval = setInterval(function () {
+                plusSlides(1);
+            }, 3000); // Set interval again after changing slide
+        }
+
+        function currentSlide(n) {
+            clearInterval(slideInterval); // Clear interval to prevent multiple intervals
+            showSlides(slideIndex = n);
+            slideInterval = setInterval(function () {
+                plusSlides(1);
+            }, 3000); // Set interval again after changing slide
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
 </body>
 
 </html>

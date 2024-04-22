@@ -26,6 +26,13 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+#mobile {
+  display: none;
+}
+
+.icon-menu {
+  display: none;
+}
 
 .dflex {
   display: flex;
@@ -109,7 +116,6 @@ nav {
 
 .dropdown:hover .dropbtn {
   color: #08820d;
-  border-bottom: 2px solid black;
 }
 
 .hero {
@@ -155,6 +161,15 @@ nav {
 .box-two {
   margin: 0 5px;
 }
+.box-top label {
+  z-index: 0;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
 .box-one input {
   border-radius: 5px;
   width: 250px;
@@ -195,7 +210,7 @@ nav {
   gap: 20px;
 }
 .top-destination {
-  height: 400px;
+  height: 500px;
   width: 50%;
   position: relative;
   margin-bottom: 150px;
@@ -386,4 +401,424 @@ footer {
 
 input {
   padding: 20px 20px;
+}
+@media screen and (max-width: 1024px) {
+  .center-body {
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  #web {
+    display: none;
+  }
+
+  .icon-menu {
+    display: flex;
+  }
+
+  #navLinks {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .mobile {
+    position: fixed;
+    background: #fff;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    padding-top: 10px;
+  }
+  .mobile-flex {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .close {
+    align-self: end;
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+
+  .mobile__flex-menu {
+    justify-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .menu a {
+    text-decoration: none;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .dflex div a {
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+  .dropdown .dropbtn {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .auth-box {
+    width: 100px;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(/images/flight.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-txt {
+    padding-top: 20px;
+  }
+
+  .hero-txt h3 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .hero-txt p {
+    font-size: 30px;
+  }
+
+  .center {
+    flex-direction: column;
+  }
+  .box-one {
+    width: 100%;
+  }
+
+  .box-one input {
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    border: none;
+
+    margin: 5px auto;
+  }
+
+  .box-one button {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+  }
+
+  .box-two {
+    margin: 0;
+  }
+
+  .box-two select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin: 5px auto;
+    z-index: 1;
+  }
+  .box-two label {
+    display: none;
+  }
+  .box-one input::placeholder {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+  .box-one button {
+    width: 100%;
+    height: 50px;
+    background-color: #08820d;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    transition: 1s;
+    margin-top: 10px;
+  }
+  .top {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .top-destination {
+    height: 500px;
+    width: 100%;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .center-body {
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  #web {
+    display: none;
+  }
+
+  .icon-menu {
+    display: flex;
+  }
+  #navLinks {
+    display: none;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .center-body {
+    padding: 0 25px;
+  }
+
+  nav .fa-bars {
+    display: block;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .mobile {
+    position: fixed;
+    background: #fff;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    padding-top: 10px;
+  }
+  .mobile-flex {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .close {
+    align-self: end;
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+
+  .mobile__flex-menu {
+    justify-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .menu a {
+    text-decoration: none;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .dflex div a {
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+
+  .dropdown .dropbtn {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .auth-box {
+    width: 100px;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(/images/flight.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-txt {
+    padding-top: 0;
+  }
+
+  .box-top {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+  }
+
+  .box-one {
+    margin: 0 5px;
+  }
+  .box-two select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin: 5px auto;
+    z-index: 1;
+  }
+  .box-two {
+    margin: 0 5px;
+  }
+  .box-two label {
+    display: none;
+  }
+  .box-one input {
+    border-radius: 5px;
+    width: 97%;
+    height: 20px;
+    border: none;
+    margin: 5px auto;
+  }
+  .box-one input::placeholder {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+  .box-one button {
+    width: 97%;
+    height: 50px;
+    background-color: #08820d;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    transition: 1s;
+    margin-top: 10px;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .top-destination {
+    height: 500px;
+    width: 100%;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .footer-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 50px;
+  }
+
+  .footer-col {
+    justify-self: flex-start;
+  }
+
+  .space {
+    padding: 50px 0;
+  }
+
+  .icon-row {
+    justify-content: flex-start;
+  }
+
+  .icon-row img {
+    width: 30px;
+    height: 30px;
+  }
+  .testimonial {
+    height: 400px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(/images/maldives.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px 0;
+  }
+  .testimonial h2 {
+  }
+  .txt p {
+    font-size: 16px;
+  }
+  .footer-about p {
+    font-style: 14px;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  .subscribe {
+    margin-top: 50px;
+  }
+
+  .subscribe h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .hr {
+    margin: 30px 0;
+  }
+  .links-footer-col ul li {
+    margin: 20px 0;
+    list-style: none;
+  }
+  .links-footer-col ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
 }

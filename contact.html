@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
 <body>
@@ -15,25 +14,56 @@
     <header>
         <div class="center-body">
             <nav>
-                <div><img class="logo" src="/images/logo.png" alt=""></div>
-                <div class="dflex">
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="about.html">About Us</a></div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services</button>
-                        <div class="dropdown-content">
-                            <a href="cruise.html">Cruise</a>
-                            <a href="flight.html">Flight</a>
-                            <a href="visa.html">Visa</a>
+                <!-- <img class="nav-menu" src="/icons/menu.svg" alt=""> -->
+                <div> <a href="index.html"><img class="logo" src="/images/logo.png" alt=""></a></div>
+
+                <div id="web">
+                    <div class="dflex" id="navLinks">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="about.html">About Us</a></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="cruise.html">Cruise</a>
+                                <a href="flight.html">Flight</a>
+                                <a href="visa.html">Visa</a>
+                            </div>
                         </div>
+                        <div><a href="Blog">Blog</a></div>
+                        <div><a href="contact.html" class="active">Contact Us</a></div>
+                        <div class="auth-box"><a href="login.html">Login</a></div>
                     </div>
-                    <div><a href="#">Blog</a></div>
-                    <div><a href="contact.html" class="active">Contact Us</a></div>
-                </div>
-                <div class="auth-box">
-                    <a href="login.html">Login</a>
                 </div>
 
+                <div class="icon-menu">
+                    <i class="fas fa-bars" onclick="showMenu()" style="color: black;"></i>
+                </div>
+            </nav>
+
+            <!-- mobile and tablet -->
+            <nav id="mobile">
+                <div class="mobile">
+                    <div class="mobile-flex">
+                        <div class="close" onclick="hideMenu()"> <i class="fas fa-times" style="color: black;"></i>
+                        </div>
+
+                        <div class="mobile__flex-menu">
+                            <div class="menu"><a href="index.html">Home</a></div>
+                            <div class="menu"><a href="about.html">About Us</a></div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="cruise.html">Cruise</a>
+                                    <a href="flight.html">Flight</a>
+                                    <a href="visa.html">Visa</a>
+                                </div>
+                            </div>
+                            <div class="menu"><a href="Blog">Blog</a></div>
+                            <div class="menu"><a href="contact.html" class="active">Contact Us</a></div>
+                            <div class="auth-box nenu"><a href="login.html">Login</a></div>
+                        </div>
+                    </div>
+                </div>
             </nav>
 
         </div>
@@ -60,6 +90,9 @@
 
                     <div class="container">
                         <h1>Get In Touch</h1>
+                        <div>
+
+                        </div>
                         <form action="Get" method="post">
                             <p>
                                 <label for="name">Name</label>
@@ -184,7 +217,18 @@
         </div>
     </footer>
     <!-- End of footer section -->
+    <script>
+        let navLinks = document.getElementById("navLinks")
 
+        function showMenu() {
+            mobile.style.display = "block";
+        }
+
+        function hideMenu() {
+            mobile.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

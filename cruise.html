@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/cruise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -14,25 +15,56 @@
     <header>
         <div class="center-body">
             <nav>
-                <div><img class="logo" src="/images/logo.png" alt=""></div>
-                <div class="dflex">
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="about.html">About Us</a></div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services</button>
-                        <div class="dropdown-content">
-                            <a href="cruise.html" class="active">Cruise</a>
-                            <a href="flight.html">Flight</a>
-                            <a href="visa.html">Visa</a>
+                <!-- <img class="nav-menu" src="/icons/menu.svg" alt=""> -->
+                <div> <a href="index.html"><img class="logo" src="/images/logo.png" alt=""></a></div>
+
+                <div id="web">
+                    <div class="dflex" id="navLinks">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="about.html">About Us</a></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="cruise.html" class="active">Cruise</a>
+                                <a href="flight.html">Flight</a>
+                                <a href="visa.html">Visa</a>
+                            </div>
                         </div>
+                        <div><a href="Blog">Blog</a></div>
+                        <div><a href="contact.html">Contact Us</a></div>
+                        <div class="auth-box"><a href="login.html">Login</a></div>
                     </div>
-                    <div><a href="#">Blog</a></div>
-                    <div><a href="contact.html">Contact Us</a></div>
-                </div>
-                <div class="auth-box">
-                    <a href="login.html">Login</a>
                 </div>
 
+                <div class="icon-menu">
+                    <i class="fas fa-bars" onclick="showMenu()" style="color: black;"></i>
+                </div>
+            </nav>
+
+            <!-- mobile and tablet -->
+            <nav id="mobile">
+                <div class="mobile">
+                    <div class="mobile-flex">
+                        <div class="close" onclick="hideMenu()"> <i class="fas fa-times" style="color: black;"></i>
+                        </div>
+
+                        <div class="mobile__flex-menu">
+                            <div class="menu"><a href="index.html" class="active">Home</a></div>
+                            <div class="menu"><a href="about.html">About Us</a></div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="cruise.html" class="active">Cruise</a>
+                                    <a href="flight.html">Flight</a>
+                                    <a href="visa.html">Visa</a>
+                                </div>
+                            </div>
+                            <div class="menu"><a href="Blog">Blog</a></div>
+                            <div class="menu"><a href="contact.html">Contact Us</a></div>
+                            <div class="auth-box nenu"><a href="login.html">Login</a></div>
+                        </div>
+                    </div>
+                </div>
             </nav>
 
         </div>
@@ -78,7 +110,7 @@
 
             </div>
 
-            <img src="/images/boat-cruise.jpg" alt="">
+            <img src="/images/pexels-mike-bird-144634.jpg" alt="">
         </div>
 
         <div class="title">
@@ -111,9 +143,6 @@
                 <p>N100,175/hour</p>
                 <button>Book Now</button>
             </div>
-        </div>
-
-        <div class="box">
             <div class="card">
                 <img src="/images/pexels-alina-matveycheva-16247769.jpg" alt="">
                 <h2>12 seater Pontoon boat</h2>
@@ -138,9 +167,7 @@
                 <p>N130,175 to and fro</p>
                 <button>Book Now</button>
             </div>
-        </div>
 
-        <div class="box">
             <div class="card">
                 <img src="/images/michael-worden-QMCkErAQEVQ-unsplash.jpg" alt="">
                 <h2>10 seater to Tarkwa bay</h2>
@@ -161,7 +188,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="center-body ">
             <div class="footer-row ">
@@ -189,11 +215,15 @@
 
                 </div>
 
-                <div class="services footer-col">
+
+                <div class="links footer-col">
                     <h3>Other Links</h3>
-                    <p>About Us</p>
-                    <p>Blog</p>
-                    <p>Contact Us</p>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact U</a></li>
+                    </ul>
+
                 </div>
 
                 <div class="contacts footer-col">
@@ -201,6 +231,7 @@
                     <p>nextdreamtravel@gmail.com</p>
                     <p>09136230385</p>
                     <p>4c Idowu Martins, Victoria Island</p>
+
                     <div class="icon-row">
                         <img src="/icons/instagram.svg" alt="">
                         <img src="/icons/facebook.svg" alt="">
@@ -210,23 +241,6 @@
                     </div>
                 </div>
 
-
-
-                <!-- <div class="subscribe">
-                        <h3>Subscribe to our Newsletter</h3>
-    
-                        <form action="get">
-                            <label for="email"></label>
-                            <input type="text" name="email" id="email">
-                            <button>Subscribe</button>
-                        </form>
-                        <div class="footer-about">
-                            <br>
-                            <p>Subscribe to receive marketing updates from Next Dream Luxury Travels and agree to our
-                                Privacy Policy
-                            </p>
-                        </div>
-                    </div> -->
             </div>
 
             <div class="hr"></div>
@@ -236,8 +250,20 @@
             </div>
         </div>
     </footer>
-    <!-- End of footer section -->
 
+    <!-- End of footer section -->
+    <script>
+        let navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            mobile.style.display = "block";
+        }
+
+        function hideMenu() {
+            mobile.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

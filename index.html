@@ -7,36 +7,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- Appbar header section -->
     <header>
         <div class="center-body">
             <nav>
-                <div><img class="logo" src="/images/logo.png" alt=""></div>
-                <div class="dflex">
-                    <div><a href="index.html" class="active">Home</a></div>
-                    <div><a href="about.html">About Us</a></div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services</button>
-                        <div class="dropdown-content">
-                            <a href="cruise.html">Cruise</a>
-                            <a href="flight.html">Flight</a>
-                            <a href="visa.html">Visa</a>
+                <!-- <img class="nav-menu" src="/icons/menu.svg" alt=""> -->
+                <div> <a href="index.html"><img class="logo" src="/images/logo.png" alt=""></a></div>
+
+                <div id="web">
+                    <div class="dflex" id="navLinks">
+                        <div><a href="index.html" class="active">Home</a></div>
+                        <div><a href="about.html">About Us</a></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="cruise.html">Cruise</a>
+                                <a href="flight.html">Flight</a>
+                                <a href="visa.html">Visa</a>
+                            </div>
                         </div>
+                        <div><a href="blog.html">Blog</a></div>
+                        <div><a href="contact.html">Contact Us</a></div>
+                        <div class="auth-box"><a href="login.html">Login</a></div>
                     </div>
-                    <div><a href="Blog">Blog</a></div>
-                    <div><a href="contact.html">Contact Us</a></div>
-                </div>
-                <div class="auth-box">
-                    <a href="login.html">Login</a>
                 </div>
 
+                <div class="icon-menu">
+                    <i class="fas fa-bars" onclick="showMenu()" style="color: black;"></i>
+                </div>
             </nav>
 
+            <!-- mobile and tablet -->
+            <nav id="mobile">
+                <div class="mobile">
+                    <div class="mobile-flex">
+                        <div class="close" onclick="hideMenu()"> <i class="fas fa-times" style="color: black;"></i>
+                        </div>
+
+                        <div class="mobile__flex-menu">
+                            <div class="menu"><a href="index.html" class="active">Home</a></div>
+                            <div class="menu"><a href="about.html">About Us</a></div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="cruise.html">Cruise</a>
+                                    <a href="flight.html">Flight</a>
+                                    <a href="visa.html">Visa</a>
+                                </div>
+                            </div>
+                            <div class="menu"><a href="blog.html">Blog</a></div>
+                            <div class="menu"><a href="contact.html">Contact Us</a></div>
+                            <div class="auth-box nenu"><a href="login.html">Login</a></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
 
         <div class="hero">
@@ -52,117 +82,327 @@
 
     <!-- End of Appbar header section -->
 
-    <main class="center-body">
+    <main>
 
-        <div class="title">
-            <h1>Popular destinations in 2024</h1>
-            <p>TAKE A LOOK AT THESE OFFERS</p>
+        <section class="center-body">
+
+            <div class="icons">
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/direction-both-svgrepo-com.svg" alt="">
+                    </div>
+
+                    <h1>Guided Tours</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/cruise.svg" alt="">
+                    </div>
+                    <h1>Cruise Package</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/worldwide.svg" alt="">
+                    </div>
+                    <h1>Worldwide coverage</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+                <div class="center">
+                    <div class="circle">
+                        <img src="/icons/air.svg" alt="">
+                    </div>
+                    <h1>Fast Booking</h1>
+                    <p>Easily offer your exclusive packages or promote your special promotions from adventure packages
+                        to special honeymoon
+                        packages with just a few image and text modifications.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="container">
+            <div class="title">
+                <h1>Select Desired Destination</h1>
+                <p>TAKE A LOOK AT THESE OFFERS</p>
+            </div>
+            <div class="slider-wrapper">
+                <button id="prev" class="slide-button"><i class='fas fa-angle-left' style='font-size:24px'></i></button>
+                <div class="image-list">
+                    <div class="image-wrapper">
+                        <img src="/images/egypt.jpg" alt="">
+                        <div class="image-text">
+                            <h2>Historical Destination</h2>
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/paris.jpg" alt="">
+                        <div class="image-text">
+                            <h2>Beach Destination</h2>
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/paris.jpg" alt="">
+                        <div class="image-text">
+                            <h2>Nat</h2>
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/paris.jpg" alt="">
+                        <div class="image-text">
+                            <h2>Maldive</h2>
+                        </div>
+                    </div>
+                    <img src="/images/maldives.jpg" alt="">
+                    <img src="/images/maldives.jpg" alt="">
+                    <img src="/images/maldives.jpg" alt="">
+                    <img src="/images/maldives.jpg" alt="">
+                    <img src="/images/maldives.jpg" alt="">
+                    <img src="/images/maldives.jpg" alt="">
+                </div>
+                <button id="next" class="slide-button"><i class='fas fa-angle-right'
+                        style='font-size:24px'></i></button>
+
+            </div>
+        </div>
+
+
+        <!-- carousel ends -->
+        <section class="center-body">
+            <div class="title">
+                <h1>Popular destinations in 2024</h1>
+                <p>TAKE A LOOK AT THESE OFFERS</p>
+            </div>
+
+            <div class="top">
+                <div class="top-destination" style="background-image: url(/images/maldives.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Maldives</p>
+                    </div>
+                </div>
+                <div class="top-destination" style="background-image: url(/images/mosque.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Maldives</p>
+                    </div>
+                </div>
+                <div class="top-destination" style="background-image: url(/images/pexel.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Maldives</p>
+                    </div>
+                </div>
+                <div class="top-destination" style="background-image: url(/images/spain.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Bacelona</p>
+                    </div>
+                </div>
+
+                <div class="top-destination" style="background-image: url(/images/kenya.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Kenya</p>
+                    </div>
+                </div>
+                <div class="top-destination" style="background-image: url(/images/ehhypt.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $500</h1>
+                        <p>Egypt</p>
+                    </div>
+                </div>
+                <div class="top-destination"
+                    style="background-image: url(/images/jezael-melgoza-alY6_OpdwRQ-unsplash.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Maldives</p>
+                    </div>
+                </div>
+                <div class="top-destination" style="background-image: url(/images/japan.jpg);">
+                    <div class="bottom-left">
+                        <h1>From $400</h1>
+                        <p>Maldives</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--  -->
+        <section>
+            <iframe src="https://www.youtube.com/embed/iNfEAJVVY10">
+            </iframe>
+        </section>
+        <div class="slideshow-container">
+            <h2>WHAT PEOPLE ARE SAYING...
+            </h2>
+            <div class="mySlides">
+                <div class="mySlides-center">
+                    <img src="/images/chris.jpg" alt="">
+                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                    <p class="author">- John Keats</p>
+
+                </div>
+
+            </div>
+
+            <div class="mySlides">
+                <div class="mySlides-center">
+                    <img src="/images/alex.jpg" alt="">
+                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="mySlides-center">
+                    <img src="/images/chris.jpg" alt="">
+                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
 
         </div>
 
-        <div class="top">
-            <div class="top-destination" style="background-image: url(/images/maldives.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Maldives</p>
-                </div>
-            </div>
-            <div class="top-destination" style="background-image: url(/images/mosque.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Maldives</p>
-                </div>
-            </div>
-            <div class="top-destination" style="background-image: url(/images/pexel.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Maldives</p>
-                </div>
-            </div>
-            <div class="top-destination" style="background-image: url(/images/spain.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Bacelona</p>
-                </div>
-            </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <div class="top">
-            <div class="top-destination" style="background-image: url(/images/kenya.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Kenya</p>
+        <!--  -->
+        <section class="center-body">
+            <div class="title">
+                <h1>Upcoming Event</h1>
+                <div class="title-bar"></div>
+            </div>
+            <div class="destination">
+                <div class="card">
+                    <img class="card-img" src="/images/dubai.jpg" alt="">
+                    <div class="card-two">
+                        <h2>Mount Kilimanjaro,</h2>
+                        <div class="join"> <i class='fas fa-map-marker-alt'></i>
+                            <p>Guatemala city, Guatemala</p>
+                        </div>
+
+                    </div>
+
+                    <div class="line2"></div>
+                    <div class="card-details">
+
+
+                        <h2 style="color: #08820d;">$144.90</h2>
+
+                        <div class="join2">
+                            <p>Explore</p>
+                            <p style="font-size: 24px; margin-top: -5px;"> &rarr;</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="card">
+                    <img class="card-img" src="/images/maldives.jpg" alt="">
+
+                    <div class="card-two">
+                        <h2>Mount Kilimanjaro,</h2>
+                        <div class="join"> <i class='fas fa-map-marker-alt'></i>
+                            <p>Guatemala city, Guatemala</p>
+                        </div>
+
+                    </div>
+
+                    <div class="line2"></div>
+                    <div class="card-details">
+
+
+                        <h2 style="color: #08820d;">$144.90</h2>
+
+                        <div class="join2">
+                            <p>Explore</p>
+                            <p style="font-size: 24px; margin-top: -5px;"> &rarr;</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card">
+                    <img class="card-img" src="/images/china.jpg" alt="">
+
+                    <div class="card-two">
+                        <h2>Mount Kilimanjaro,</h2>
+                        <div class="join"> <i class='fas fa-map-marker-alt'></i>
+                            <p>Guatemala city, Guatemala</p>
+                        </div>
+
+                    </div>
+
+                    <div class="line2"></div>
+                    <div class="card-details">
+
+
+                        <h2 style="color: #08820d;">$144.90</h2>
+
+                        <div class="join2">
+                            <p>Explore</p>
+                            <p style="font-size: 24px; margin-top: -5px;"> &rarr;</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="top-destination" style="background-image: url(/images/ehhypt.jpg);">
-                <div class="bottom-left">
-                    <h1>From $500</h1>
-                    <p>Egypt</p>
-                </div>
-            </div>
-            <div class="top-destination"
-                style="background-image: url(/images/jezael-melgoza-alY6_OpdwRQ-unsplash.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Maldives</p>
-                </div>
-            </div>
-            <div class="top-destination" style="background-image: url(/images/japan.jpg);">
-                <div class="bottom-left">
-                    <h1>From $400</h1>
-                    <p>Maldives</p>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!-- Newsletter -->
+
+        <div>
 
 
+            <div class="newsletter">
 
+                <div class="news-row">
+                    <div>
+                        <h2 style="margin-bottom: 10px;">Want to get the latest travel news and deals?
+                        </h2>
 
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/iNfEAJVVY10">
-        </iframe>
-        <div class="title">
-            <h1>Upcoming Event</h1>
-            <div class="title-bar"></div>
-        </div>
-        <div class="destination">
-            <div class="card">
-                <img class="card-img" src="/images/dubai.jpg" alt="">
-                <div class="card-details">
-                    <h3>Dubai</h3>
-                    <h2>$1000</h2>
+                        <p>Enter your email and we'll send them your way.</p>
+                    </div>
+
+                    <div class="roww">
+                        <form action="get" method="post" class="form-row">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Your name...">
+
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Your email...">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="card-details">
-                    <p style="color: #08820d">24 Aug - 30 Aug</p>
-                    <p>7 days</p>
-                </div>
+
+
 
             </div>
 
-            <div class="card">
-                <img class="card-img" src="/images/china.jpg" alt="">
-                <div class="card-details">
-                    <h3>China</h3>
-                    <h2>$1200</h2>
-                </div>
+            <!-- Newsletter end -->
 
-                <div class="card-details">
-                    <p style="color: #08820d">24 Aug - 30 Aug</p>
-                    <p>7 days</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="/images/maldives.jpg" alt="">
-                <div class="card-details">
-                    <h3>Maldives</h3>
-                    <h2>$1200</h2>
-                </div>
-                <div class="card-details">
-                    <p style="color: #08820d">24 Aug - 30 Aug</p>
-                    <p>7 days</p>
-                </div>
-            </div>
-        </div>
     </main>
 
 
@@ -183,7 +423,7 @@
                 </div>
 
 
-                <div class="links footer-col">
+                <div class="links">
                     <h3>Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -194,11 +434,15 @@
 
                 </div>
 
-                <div class="services footer-col">
+                <div class="links">
                     <h3>Other Links</h3>
-                    <p>About Us</p>
-                    <p>Blog</p>
-                    <p>Contact Us</p>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li> <a href="Login">Login</a></li>
+                    </ul>
+
                 </div>
 
                 <div class="contacts footer-col">
@@ -242,6 +486,77 @@
         </div>
     </footer>
     <!-- End of footer section -->
+
+
+    <script>
+        let navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            mobile.style.display = "block";
+        }
+
+        function hideMenu() {
+            mobile.style.display = "none";
+        }
+
+
+        const initSlider = () => {
+            const imageList = document.querySelector(".slider-wrapper .image-list");
+            const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+
+            slideButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const direction = button.id === "prev" ? -1 : 1;
+                    const scrollAmount = imageList.clientWidth * direction;
+                    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                });
+            });
+        }
+
+        window.addEventListener("load", initSlider);
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Automatically change slides every 3 seconds
+        let slideInterval = setInterval(function () {
+            plusSlides(1);
+        }, 3000);
+
+        function plusSlides(n) {
+            clearInterval(slideInterval); // Clear interval to prevent multiple intervals
+            showSlides(slideIndex += n);
+            slideInterval = setInterval(function () {
+                plusSlides(1);
+            }, 3000); // Set interval again after changing slide
+        }
+
+        function currentSlide(n) {
+            clearInterval(slideInterval); // Clear interval to prevent multiple intervals
+            showSlides(slideIndex = n);
+            slideInterval = setInterval(function () {
+                plusSlides(1);
+            }, 3000); // Set interval again after changing slide
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
 
 </body>
 

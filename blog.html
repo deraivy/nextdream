@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Appbar header section -->
+    <header>
+        <div class="center-body">
+            <nav>
+                <!-- <img class="nav-menu" src="/icons/menu.svg" alt=""> -->
+                <div> <a href="index.html"><img class="logo" src="/images/logo.png" alt=""></a></div>
+
+                <div id="web">
+                    <div class="dflex" id="navLinks">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="about.html">About Us</a></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="cruise.html">Cruise</a>
+                                <a href="flight.html">Flight</a>
+                                <a href="visa.html">Visa</a>
+                            </div>
+                        </div>
+                        <div><a href="Blog" class="active">Blog</a></div>
+                        <div><a href="contact.html">Contact Us</a></div>
+                        <div class="auth-box"><a href="login.html">Login</a></div>
+                    </div>
+                </div>
+
+                <div class="icon-menu">
+                    <i class="fas fa-bars" onclick="showMenu()" style="color: black;"></i>
+                </div>
+            </nav>
+
+            <!-- mobile and tablet -->
+            <nav id="mobile">
+                <div class="mobile">
+                    <div class="mobile-flex">
+                        <div class="close" onclick="hideMenu()"> <i class="fas fa-times" style="color: black;"></i>
+                        </div>
+
+                        <div class="mobile__flex-menu">
+                            <div class="menu"><a href="index.html">Home</a></div>
+                            <div class="menu"><a href="about.html" class="active">About Us</a></div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="cruise.html">Cruise</a>
+                                    <a href="flight.html">Flight</a>
+                                    <a href="visa.html">Visa</a>
+                                </div>
+                            </div>
+                            <div class="menu"><a href="Blog">Blog</a></div>
+                            <div class="menu"><a href="contact.html">Contact Us</a></div>
+                            <div class="auth-box nenu"><a href="login.html">Login</a></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+
+        <div class="hero">
+            <div class="center-body">
+                <div class="hero-txt">
+                    <h3>our Story</h3>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="center-body">
+
+        <div class="top">
+            <div>
+                <div class="blog">
+                    <img src="/images/bali.jpg" alt="">
+                    <div class="date">
+                        <p>Jan 29, 2024</p>
+                        <p>admin</p>
+                        <p>2 comment</p>
+                    </div>
+                    <h2>Top dream destinations</h2>
+
+                    <div class="blog-box">
+                        <p>Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet
+                            neque
+                            sed
+                            elementum. Fusce ut
+                            turpis felis. Etiam pretium pharetra augue, ac porttitor dolor consequat eget. Cras tempor
+                            suscipit
+                            enim vehicula
+                            ultrices. Mauris sed orci blandit.
+                        </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="/images/bali.jpg" alt="">
+                    <div class="date">
+                        <p>Jan 29, 2024</p>
+                        <p>admin</p>
+                        <p>2 comment</p>
+                    </div>
+                    <h2>Top dream destinations</h2>
+
+                    <div class="blog-box">
+                        <p>Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet
+                            neque
+                            sed
+                            elementum. Fusce ut
+                            turpis felis. Etiam pretium pharetra augue, ac porttitor dolor consequat eget. Cras
+                            tempor
+                            suscipit
+                            enim vehicula
+                            ultrices. Mauris sed orci blandit.
+                        </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="/images/bali.jpg" alt="">
+                    <div class="date">
+                        <p>Jan 29, 2024</p>
+                        <p>admin</p>
+                        <p>2 comment</p>
+                    </div>
+                    <h2>Top dream destinations</h2>
+
+                    <div class="blog-box">
+                        <p>Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet
+                            neque
+                            sed
+                            elementum. Fusce ut
+                            turpis felis. Etiam pretium pharetra augue, ac porttitor dolor consequat eget. Cras
+                            tempor
+                            suscipit
+                            enim vehicula
+                            ultrices. Mauris sed orci blandit.
+                        </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="search">
+                    <h3>Search Flight</h3>
+                </div>
+
+                <div class="box-one">
+                    <form action="get" method="post">
+                        <label for="origin">Origin:</label>
+                        <input type="text" name="origin" id="origin" placeholder="Origin" list="city-list">
+                        <datalist id="city-list">
+                            <option value="Lagos"></option>
+                            <option value="Dubai"></option>
+                            <option value="London"></option>
+                            <option value="Rwanda"></option>
+                            <option value="Benin"></option>
+                            <option value="Abuja"></option>
+                        </datalist>
+
+                    </form>
+                </div>
+
+                <div class="box-one">
+                    <form action="get" method="post">
+                        <label for="origin">Destination</label>
+                        <input type="text" name="origin" id="origin" placeholder="destination?" list="city-list">
+                        <datalist id="city-list">
+                            <option value="Lagos"></option>
+                            <option value="Dubai"></option>
+                            <option value="London"></option>
+                            <option value="Rwanda"></option>
+                            <option value="Benin"></option>
+                            <option value="Abuja"></option>
+                        </datalist>
+
+                    </form>
+                </div>
+
+                <div class="date-row">
+                    <div class="box-three">
+                        <form action="get" method="post">
+                            <p> <label for="origin">Depature</label></p>
+                            <input type="date" name="" id="">
+                        </form>
+                    </div>
+                    <div class="box-three">
+                        <form action="get" method="post">
+                            <p><label for="origin">Return</label></p>
+                            <input type="date" name="" id="" placeholder="Your Placeholder Text Here">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="box-two">
+                    <label for="trip">Choose Trip Type:</label>
+                    <select name="trip" class="trip">
+                        <optgroup label="Type">
+                            <option value="round-trip">Round Trip</option>
+                            <option value="one-way">One Way</option>
+                            <option value="multi-trip">Multi Trip</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="box-two">
+                    <label for="trip"></label>
+                    <select name="trip" class="trip">
+                        <optgroup label="Type">
+                            <option value="round-trip">Economy</option>
+                            <option value="one-way">Premium Economy</option>
+                            <option value="multi-trip">Business Class</option>
+                            <option value="multi-trip">First Class</option>
+
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="date-row">
+                    <div class="box-three">
+                        <label for="trip">Adult</label>
+                        <select name="trip" class="trip">
+                            <optgroup label="Adult">
+                                <option value="round-trip">1</option>
+                                <option value="one-way">2</option>
+                                <option value="multi-trip">3</option>
+                                <option value="multi-trip">4</option>
+                                <option value="multi-trip">5</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="box-three">
+                        <label for="trip">Infant</label>
+                        <select name="trip" class="trip">
+                            <optgroup label="Adult">
+                                <option value="round-trip">1</option>
+                                <option value="one-way">2</option>
+                                <option value="multi-trip">3</option>
+                                <option value="multi-trip">4</option>
+                                <option value="multi-trip">5</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="box-one">
+                    <button>Search</button>
+                </div>
+
+                <div>
+                    <h1>Recent Post</h1>
+                    <div>
+                        <div class="recent">
+                            <img src="/images/dubai.jpg" alt="">
+                            <div class="recent-txt">
+                                <p>January 30 2024</p>
+                                <h2>Top dream destinations</h2>
+                                <p>activies</p>
+                            </div>
+                        </div>
+
+                        <div class="recent">
+                            <img src="/images/dubai.jpg" alt="">
+                            <div class="recent-txt">
+                                <p>January 30 2024</p>
+                                <h2>Top dream destinations</h2>
+                                <p>activies</p>
+                            </div>
+                        </div>
+
+                        <div class="recent">
+                            <img src="/images/dubai.jpg" alt="">
+                            <div class="recent-txt">
+                                <p>January 30 2024</p>
+                                <h2>Top dream destinations</h2>
+                                <p>activies</p>
+                            </div>
+                        </div>
+
+                        <div class="recent">
+                            <img src="/images/dubai.jpg" alt="">
+                            <div class="recent-txt">
+                                <p>January 30 2024</p>
+                                <h2>Top dream destinations</h2>
+                                <p>activies</p>
+                            </div>
+                        </div>
+
+                        <div class="recent">
+                            <img src="/images/dubai.jpg" alt="">
+                            <div class="recent-txt">
+                                <p>January 30 2024</p>
+                                <h2>Top dream destinations</h2>
+                                <p>activies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag-head">
+                        <h2>Tag Cloud</h2>
+                        <div class="tag">
+                            <button>Adventure</button>
+                            <button>Romantic getaway</button>
+                            <button>Food</button>
+                            <button>Fashion</button>
+                            <button>Lifestyle</button>
+                            <button>Art</button>
+                            <button>Nature</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="center-body ">
+            <div class="footer-row ">
+                <div class="footer-col">
+                    <img class="logo" src="/images/logo.png" alt="">
+                    <div class="footer-about">
+                        <p>From dreamy beaches to bustling cities, our platform is your one-stop shop for all things
+                            travel.
+                            Whether you're seeking
+                            a relaxing retreat, a thrilling adventure, or a cultural immersion, we've got you covered."
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="links footer-col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flight.html">Flight</a></li>
+                        <li><a href="visa.html">Visa</a></li>
+                        <li> <a href="cruise.html">Cruise</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="links footer-col">
+                    <h3>Other Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact U</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="contacts footer-col">
+                    <h3>Contact Us</h3>
+                    <p>nextdreamtravel@gmail.com</p>
+                    <p>09136230385</p>
+                    <p>4c Idowu Martins, Victoria Island</p>
+
+                    <div class="icon-row">
+                        <img src="/icons/instagram.svg" alt="">
+                        <img src="/icons/facebook.svg" alt="">
+                        <img src="/icons/twitter.svg" alt="">
+                        <img src="/icons/pintrest.svg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="center">
+                <p class="center-text">&copy; copyright 2024. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer section -->
+    <script>
+        let navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            mobile.style.display = "block";
+        }
+
+        function hideMenu() {
+            mobile.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
