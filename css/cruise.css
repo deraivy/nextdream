@@ -466,8 +466,9 @@ input {
   }
 
   .hero-txt h3 {
-    font-size: 10px;
+    font-size: 60px;
     text-align: center;
+    margin-top: 50px;
   }
 
   .about {
@@ -476,11 +477,11 @@ input {
   }
   .about-box {
     border: 2px solid transparent;
-    width: 40%;
+    width: 100%;
   }
   .about img {
-    height: 600px;
-    width: 55%;
+    height: 0;
+    width: 0;
   }
 
   .box {
@@ -499,7 +500,7 @@ input {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
   .center-body {
     max-width: 100%;
     width: 800px;
@@ -597,6 +598,10 @@ input {
   .about {
     flex-direction: column;
   }
+  .about img {
+    height: 0;
+    width: 0;
+  }
   .about-box {
     border: 2px solid transparent;
     width: 100%;
@@ -608,6 +613,7 @@ input {
     margin-bottom: 30px;
   }
   .box {
+    display: flex;
     flex-direction: column;
   }
   .serves img {
@@ -652,6 +658,44 @@ input {
   .icon-row img {
     width: 30px;
     height: 30px;
+  }
+  .footer-about p {
+    font-style: 14px;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  .subscribe {
+    margin-top: 50px;
+  }
+
+  .subscribe h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .hr {
+    margin: 30px 0;
+  }
+  .links-footer-col ul li {
+    margin: 20px 0;
+    list-style: none;
+  }
+  .links-footer-col ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
   }
   .testimonial {
     height: 400px;

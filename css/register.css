@@ -24,7 +24,12 @@ body {
   width: 150px;
   height: 150px;
 }
-
+#mobile {
+  display: none;
+}
+.icon-menu {
+  display: none;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -163,4 +168,106 @@ nav {
   font-weight: bold;
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 1024px) {
+  .center-body {
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  #web {
+    display: none;
+  }
+
+  .icon-menu {
+    display: flex;
+  }
+
+  #navLinks {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  nav .fa-bars {
+    display: block;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .mobile {
+    position: fixed;
+    background: #fff;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    padding-top: 10px;
+  }
+  .mobile-flex {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .close {
+    align-self: end;
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+
+  .mobile__flex-menu {
+    justify-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .dflex div a {
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+  .dropdown .dropbtn {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .auth-box {
+    width: 100px;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .card {
+    width: 60%;
+    height: auto;
+    margin: 100px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
 }
